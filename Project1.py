@@ -1,0 +1,17 @@
+name1=input("Enter your first friend name")
+name2=input("Enter your second friends name")
+name3=input("Enter your third friends name")
+name4=input("Enter your fourth friends name")
+name5=input("Enter your fifth friends name")
+
+date1=input("Enter your first friend date")
+date2=input("Enter your second friends date")
+date3=input("Enter your third friends date")
+date4=input("Enter your fourth friends date")
+date5=input("Enter your fifth friends date")
+
+print(name1,date1)
+print(name2,date2)
+print(name3,date3)
+print(name4,date4)
+print(name5,date5)
