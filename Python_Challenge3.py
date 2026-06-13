@@ -1,0 +1,10 @@
+a=35
+b=48
+c=58
+d=56
+sum=a*d
+print(sum)
+e=sum-(b-c)
+print(e)
+f=e/d
+print(f)
