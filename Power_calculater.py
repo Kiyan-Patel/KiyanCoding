@@ -1,6 +1,15 @@
-n=int(input("Enter the number"))
-p=int(input("Enter the number you want to power your number by"))
+def calculate_power(Base,exponent):
+    if exponent==0:
+        return 1
+    
+    result=1
+    for _ in range(abs(exponent)):
+        result=result*Base
 
-for i in n:
-    i=n**p
-    print("The total is", i)
+    if exponent<0:
+        return 1/result
+    
+    return result
+
+print(calculate_power(3,3))
+print(calculate_power(3,-3))
