@@ -32,14 +32,14 @@ def main():
  print("4. Divide")
 
 
- choice = input("Select operation (1-4): ")
+choice=input("Select operation (1-4): ")
 
 
 if choice not in ['1', '2', '3', '4']:
 
  print("Invalid operation choice!")
+ 
 
-return
 
 # try/except block to catch non-number inputs (ValueError)
 
@@ -50,10 +50,8 @@ try:
  num2 = float(input("Enter second number: "))
 
 except ValueError:
-
  print("Error: That was not a valid number!")
-
-  return
+ 
 
 # try/except block to catch division by zero (ZeroDivisionError)
 
@@ -61,19 +59,19 @@ try:
 
  if choice == '1':
 
- print("Result:", add(num1, num2))
+  print("Result:", add(num1, num2))
 
-elif choice == '2':
+ elif choice == '2':
 
- print("Result:", subtract(num1, num2))
+  print("Result:", subtract(num1, num2))
 
-elif choice == '3':
+ elif choice == '3':
 
- print("Result:", multiply(num1, num2))
+  print("Result:", multiply(num1, num2))
 
-elif choice == '4':
+ elif choice == '4':
 
- print("Result:", divide(num1, num2))
+  print("Result:", divide(num1, num2))
 
 except ZeroDivisionError:
 
